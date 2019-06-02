@@ -107,7 +107,7 @@ python main.py $dataset\
                --benchmark $benchmark\
                -a $arch\
                -p 100\
-               --start-epoch 65
+               --start-epoch 65\
                --epochs $epoch\
                --lr $lr\
                --lr-method $lr_method\
