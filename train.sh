@@ -19,7 +19,7 @@ Modify the following settings as you wish !
 #mpncovresnet: mpncovresnet50, mpncovresnet101
 #inceptionv3
 #You can also add your own network in src/network
-arch=mpncovresnet50
+arch=mpncovresnet101
 #*********************************************
 
 #***************global method****************
@@ -41,7 +41,7 @@ description=reproduce
 benchmark=car_data
 datadir=/home/ec2-user/GrabAIChallenge/data/stanford-car-dataset-by-classes-folder
 dataset=$datadir/$benchmark
-num_classes=1000
+num_classes=196
 #*********************************************
 
 #****************Hyper-parameters*************
@@ -49,9 +49,9 @@ num_classes=1000
 # Freeze the layers before a certain layer.
 freeze_layer=0
 # Batch size
-batchsize=32
+batchsize=16
 # The number of total epochs for training
-epoch=120
+epoch=200
 # The inital learning rate
 # decreased by step method
 lr=0.1
