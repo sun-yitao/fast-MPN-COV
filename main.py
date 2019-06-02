@@ -189,7 +189,7 @@ def main():
 
     # Data loading code
     traindir = os.path.join(args.data, 'train')
-    valdir = os.path.join(args.data, 'val')
+    valdir = os.path.join(args.data, 'test')
     train_transforms, val_transforms, evaluate_transforms = preprocess_strategy(args.benchmark)
 
     train_dataset = datasets.ImageFolder(
