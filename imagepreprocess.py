@@ -81,7 +81,7 @@ def preprocess_strategy(dataset):
             transforms.Lambda(lambda crops: torch.stack([transforms.ToTensor()(crop) for crop in crops])),
             transforms.Lambda(lambda crops: torch.stack([normalize(crop) for crop in crops])),
         ])
-    elif dataset.startswith('Cars'):
+    elif dataset.startswith('car_data'):
         train_transforms = transforms.Compose([
             transforms.Resize((448,448)),
             transforms.RandomHorizontalFlip(),
