@@ -135,7 +135,7 @@ def main():
                       args.freezed_layer,
                       pretrained=args.pretrained)
     # plot network
-    vizNet(model, args.modeldir)
+    #vizNet(model, args.modeldir)
     # obtain learning rate
     LR = Learning_rate_generater(args.lr_method, args.lr_params, args.epochs)
     if args.pretrained:

@@ -8,7 +8,6 @@ import scipy.io as sio
 import torch
 import torch.nn as nn
 import numpy as np
-from src.torchviz import  make_dot, make_dot_from_trace
 
 
 class stats:
@@ -45,12 +44,6 @@ class stats:
         self.valTop1.append(prec1.cpu().numpy())
         self.valTop5.append(prec5.cpu().numpy())
 
-
-def vizNet(model, path):
-    x = torch.randn(10,3,224,224)
-    y = model(x)
-    g = make_dot(y)
-    g.render(os.path.join(path,'graph'), view=False)
 
 def plot_curve(stats, path, iserr):
     trainObj = np.array(stats.trainObj)
