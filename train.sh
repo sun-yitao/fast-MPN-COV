@@ -39,7 +39,7 @@ description=reproduce
 #*******************Dataset*******************
 #Choose the dataset folder
 benchmark=car_data
-datadir=/Users/sunyitao/Documents/Projects/ML_Projects/GrabAIChallenge/data/stanford-car-dataset-by-classes-folder
+datadir=/home/ec2-user/GrabAIChallenge/data/stanford-car-dataset-by-classes-folder
 dataset=$datadir/$benchmark
 num_classes=1000
 #*********************************************
