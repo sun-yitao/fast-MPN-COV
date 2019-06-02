@@ -51,7 +51,7 @@ freeze_layer=0
 # Batch size
 batchsize=32
 # The number of total epochs for training
-epoch=65
+epoch=120
 # The inital learning rate
 # decreased by step method
 lr=0.1
